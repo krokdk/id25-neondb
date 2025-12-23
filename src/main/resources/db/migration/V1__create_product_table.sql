@@ -1,0 +1,1 @@
+create table product (price numeric(38,2) not null, id bigserial not null, name varchar(255) not null, primary key (id));
