@@ -13,6 +13,9 @@ public class Product {
     private String name;
 
     @Column(nullable = false)
+    private String status;
+
+    @Column(nullable = false)
     private BigDecimal price;
 
     public void setName(String name) {
@@ -33,5 +36,13 @@ public class Product {
 
     public BigDecimal getPrice() {
         return this.price;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
