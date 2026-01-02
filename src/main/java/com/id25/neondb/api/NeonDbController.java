@@ -10,7 +10,7 @@ public class NeonDbController {
     private final String databaseUrl;
 
     public NeonDbController(Environment env) {
-        this.databaseUrl = env.getProperty("DATABASE_USER");
+        this.databaseUrl = env.getProperty("DATABASE_URL");
     }
 
     @GetMapping("/url")
